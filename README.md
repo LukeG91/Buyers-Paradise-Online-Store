@@ -19,7 +19,7 @@
 - [Table contents](#contents)
 - [Installation](#installation)
 - [Usage](#usage)
-  - [Screenshots]()
+  - [Screenshots](#screenshots)
 
 <a name="installation"></a>
 
