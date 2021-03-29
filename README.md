@@ -47,7 +47,7 @@ Open VS code or the code editor that you use and open the project folder that yo
 #### Step 4
 
 ```bash
-If you are using VS code, right click on the index.html file and select the "open with live server".  If you do not have the Live Server extension installed, you can follow the link below which shows how to install extensions in VS code.
+If you are using VS code, right click on the index.html file and select the "open with live server" option.  If you do not have the Live Server extension installed, you can follow the link below which shows how to install extensions in VS code.
 
 https://code.visualstudio.com/docs/editor/extension-gallery
 ```
