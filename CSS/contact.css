@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 900px;
+    text-align: center;
+    /* Setting  the body to use a specific animation for it's background color */
+    animation: newanimation 8s infinite;
+}
+
+/* Customising the background color so that it changes between different colors automatically */
+
+@keyframes newanimation {
+    0% {background-color: orangered;}
+    25% {background-color: red;}
+    50% {background-color: orange;}
+    75% {background-color: red;}
+    100% {background-color: orangered;}
+
+}
+
+.container {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container > h1 {
+    font-size: 5rem;
+}

@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Setting  the body to use a specific animation for it's background color */
+body { 
+    height: 1300px;
+    text-align: center;
+    animation: newanimation 8s infinite;
+    text-align: center;
+}
+
+/* Customising the background color so that it changes between different colors automatically */
+@keyframes newanimation {
+    0% {background-color: orangered;}
+    25% {background-color: red;}
+    50% {background-color: orange;}
+    75% {background-color: red;}
+    100% {background-color: orangered;}
+}
+
+.mainHeading {
+    width: 100%;
+    height: 80px;
+    background: black;
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    position: relative;
+    top: -9px;
+    padding-top: 5px;
+}
+
+.mainHeading > h1 {
+    margin-top: 8px;
+}
+
+.backToHome{
+    font-size: 2rem;
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+    padding: 4px;
+    text-decoration: underline;
+    color: #fff;
+}
+
+.backToHome:hover{
+    color: yellow;
+}
+
+#formSection {
+    width: 50%;
+    height: 1050px;
+    border: solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    background: lightgray;
+}
+
+.customerSurvey {
+    text-align: center;
+    height: 60px;
+}
+
+.customerSurvey > h1 {
+    margin-top: 25px;
+    font-size: 2.5rem;
+}
+
+.shippingSection{
+    /* border: solid rebeccapurple; */
+    top: 200px;
+    width: 20%;
+    left: 40%;
+    height: 100px;
+    text-align: center;
+    position: absolute;
+    background: #fff;
+}
+
+.expressShipping, .shippingService, .shippingLinks{
+    height: 120px;
+    background: #fff;
+}
+
+.expressShippingWhereWeAre {
+    color: red;
+}
+
+.shippingLinks-options {
+    background: orangered;
+    height: 50px;
+    margin-top: -20px;
+    border: solid black;
+    
+}
+
+.dhl{
+    position: relative;
+    top: 5px;
+}
+
+.skyNet{
+    position: relative;
+    top: 10px;
+}
+
+.dhl:hover, .skyNet:hover{
+    color: #fff;
+    background: black;
+}
+
+.internationalShipping-options, .expressShipping-options, .shippingService-options{
+    border: solid black;
+    position: relative;
+    height: 40px;
+    bottom: 25px;
+    background: orangered;
+}
+
+#requireInternationalShipping {
+    position: absolute;
+    left: 110px;
+    top: 3px;
+}
+
+#requireInternationalShipping-no {
+    position: absolute;
+    left: 110px;
+    top: 20px;
+}
+
+#requireExpressShipping {
+    position: absolute;
+    left: 110px;
+    top: 3px;
+}
+
+#requireExpressShipping-no {
+    position: absolute;
+    left: 110px;
+    top: 20px;
+}
+
+.expressShipping-info{
+    color: blue;
+}
+
+#useExternalShipping {
+    position: absolute;
+    left: 110px;
+    top: 3px;
+}
+
+#useOurShipping {
+    position: absolute;
+    left: 110px;
+    top: 20px;
+}
+
+.externalShipping, .ourShipping{
+    position: absolute;
+    left: 130px;
+}
+
+.whatWeStriveFor-heading{
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.whatWeStriveFor > ul {
+    margin-bottom: 15px;
+}
+
+.whatWeStriveFor > ul > li {
+    color: blue;
+    list-style: square;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.customerFeedback-box {
+    background:blueviolet;
+    height: 170px;
+}
+
+.customerFeedback-box-label{
+    font-size: 1.4rem;
+}
+
+.customerFeedback-label-box{
+        position: relative;
+        top: 18px;   
+}
+
+#customerFeedback{
+    height: 100px;
+    width: 250px;
+}
+
+.customerFeedback-box > textarea {
+    font-size: 18px;
+}
+
+/* Added padding to the submit button */
+
+.shippingService-submit-button{
+    width: 90px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    background: orangered;
+    border-radius: 8%;
+    padding: 10px;
+}
+
+.shippingService-submit-button:hover{
+    color: #fff;
+    background: black;
+}
+
+.shippingService-submit-button-box{
+    position: relative;
+    top: 25px;
+}

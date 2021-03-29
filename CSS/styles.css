@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Added padding to all images on this page and to the search button */
+
+img, a > img, .searchButton{
+    padding: 5px;
+}
+
+body {
+    height: 900px;
+    text-align: center;
+    /* Setting  the body to use a specific animation for it's background color */
+    animation: newanimation 8s infinite;
+}
+
+/* Customising the background color so that it changes between different colors automatically */
+
+@keyframes newanimation {
+    0% {background-color: orangered;}
+    25% {background-color: red;}
+    50% {background-color: orange;}
+    75% {background-color: red;}
+    100% {background-color: orangered;}
+
+}
+
+#main__section{
+    width: 100%;
+}
+
+.main__section-heading{
+    width: 100%;
+    height: 160px;
+    border: solid yellow;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 0;
+    background: black;
+}
+
+
+/* I used a font-size of 3rem to show that this is the main heading on the web page. */
+/* I also used a customer font (Montserrat) from Google Fonts and made the color of the font white. */
+
+.main__section-heading > h1 {
+    font-size: 3rem;
+    margin-top: 0;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* I added a customfont (IBM Plex Sans) using Google Fonts, I also changed the color of the text to yellow 
+to make the name of the company stand out. */
+
+.main__section-heading > h1 > span {
+    color: yellow;
+    text-decoration: underline;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* I used a smaller font size to differentiate the slogan on the company from the main heading */
+
+.main__section-heading > h5 {
+    font-size: 1rem;
+    color: #fff;
+}
+
+#main__section > nav > a:hover {
+    color: orangered;
+}
+
+.content__section-heading{
+    margin-top: 10px;
+    margin-left: 15px;
+    text-align: center;
+}
+
+.brands{
+    border: solid yellow;
+    display: flex;
+    justify-content: center;
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    background: black;
+    border-radius: 10px;
+}
+
+/* Using the font-size of 1.3 rem for the brand information on the landing page so that the size of the text is differentiated from 
+the main heading and the slogan on the web page, as all three pieces of text have different font sizes. */
+
+.brands > h4{
+    padding: 10px;
+    font-size: 1.3rem;
+    color: #eaffd0;
+}
+
+.grid__container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(100px, 300px);
+    grid-gap: 5px;
+    text-align: center;
+}
+
+.grid__container > div {
+    background: black;
+}
+
+/* Added a border for the images  */
+
+.grid__container > div >  a > img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border: solid yellow;
+}
+
+.content__section-sale-heading{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.linkToSale{
+    text-decoration: underline;
+    font-size: 1.5rem;
+    color: blue;
+    padding: 10px;
+}
+
+.linkToSale:hover{
+    color: yellow;
+}
+
+/* Added a border around the left image container */
+
+#leftContainer{
+    width: 210px;
+    height: 135px;
+    border: solid yellow;
+    float: left;
+    position: relative;
+    left: 100px;
+    bottom: 140px;
+}
+
+/* Applying color filters/brightness (to the image) */
+
+#leftContainer > img {
+    width: 205px;
+    height: 129px;
+    object-fit: cover;
+    filter: brightness(120%);
+}
+
+/* Added a border around the right image container */
+
+#rightContainer{
+    width: 210px;
+    height: 135px;
+    border: solid yellow;
+    float: right;
+    position: relative;
+    right: 100px;
+    bottom: 140px;
+}
+
+/* Applying color filters/brightness (to the image) */
+
+#rightContainer > img {
+    width: 205px;
+    height: 129px;
+    object-fit: cover;
+    filter: brightness(120%);
+}

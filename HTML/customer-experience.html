@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Experience Page</title>
+    <link rel="stylesheet" href="../CSS/customer-experience.css">
+</head>
+
+<body>
+    <header>
+        <div class="mainHeading">
+            <h1><em>Help us improve your shopping experience</em> <a class="backToHome"
+                    href="./index.html"><em>Home</em></a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="customerSurvey">
+        <h1><em>Customer shipping & experience survey</em></h1>
+    </div>
+
+    <section id="formSection">
+        <form>
+
+            <!-- Added a form giving the customers radio button options to choose from regaridng their shipping preferences. -->
+
+            <div class="shippingSection">
+                <h3>Do you require international shipping?</h3>
+                <br>
+                <br>
+                <div class="internationalShipping-options">
+                    <input type="radio" id="requireInternationalShipping" name="shipping" value="yes">
+                    <label for="requireInternationalShipping">Yes</label>
+                    <br>
+                    <input type="radio" id="requireInternationalShipping-no" name="shipping" value="no">
+                    <label for="requireInternationalShipping-no">No</label>
+                </div>
+
+                <div class="expressShipping">
+                    <h3>Do you require express shipping?
+                        <span class="expressShippingWhereWeAre"><em>(Local delivery (SA), up to 1 day, international
+                                delivery up to 3 days)</em></span>
+                    </h3>
+                    <br>
+                    <br>
+                    <div class="expressShipping-options">
+                        <input type="radio" id="requireExpressShipping" name="expressShipping" value="yes">
+                        <label for="requireExpressShipping">Yes</label>
+                        <br>
+                        <input type="radio" id="requireExpressShipping-no" name="expressShipping" value="no">
+                        <label for="requireExpressShipping-no">No</label>
+
+                    </div>
+                </div>
+
+                <br>
+                <br>
+
+                <div class="shippingService">
+                    <h3>Would you prefer to use your own courier/shipping service or our shipping service?</h3>
+                    <br>
+                    <br>
+                    <div class="shippingService-options">
+                        <input type="radio" id="useExternalShipping" name="shippingOption" value="my own">
+                        <label class="externalShipping" for="useExternalShipping">Mine</label>
+                        <br>
+                        <input type="radio" id="useOurShipping" name="shippingOption" value="Our shipping">
+                        <label class="ourShipping" for="useOurShipping">Yours</label>
+                    </div>
+
+                    <div class="shippingLinks">
+                        <h3>If you would prefer to use an external courier/shipping service, check out the links below.
+                        </h3>
+                        <br>
+                        <br>
+                        <div class="shippingLinks-options">
+
+                            <!-- Adding 2 links to external websites in case customers would like to use an external shipping/courier service instead of ours. -->
+                            <a class="dhl" target="_blank" href="https://www.dhl.com/za-en/home.html"><em>DHL</em></a>
+                            <br>
+                            <a class="skyNet" target="_blank" href="https://www.skynet.co.za/"><em>SKY NET</em></a>
+                        </div>
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <div class="whatWeStriveFor">
+
+                        <!-- Added an unordered list to display the level of service and customer experience that we strive for. -->
+
+                        <h3 class="whatWeStriveFor-heading"><em>What we strive for:</em></h3>
+                        <br>
+                        <ul>
+                            <li><em>Service Excellence</em></li>
+                            <li><em>Excellent product range</em></li>
+                            <li><em>To be the best in our industry</em></li>
+                            <li><em>To give our customers the best experience possible</em></li>
+                        </ul>
+                    </div>
+
+                    <div class="customerFeedback-box">
+
+                        <div class="customerFeedback-label-box">
+                            <label class="customerFeedback-box-label" for="customerFeedback">Let us know what you
+                                think...</label>
+                        </div>
+                        <br>
+                        <br>
+                        <textarea name="customerFeedback" id="customerFeedback" cols="30"
+                            placeholder="Let us know if we are living up to what we strive for..."></textarea>
+                    </div>
+
+                    <div class="shippingService-submit-button-box">
+
+                        <!-- Added a submit buttom for the shipping and customer experience form. -->
+                        <button type="submit" class="shippingService-submit-button">Submit</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </form>
+    </section>
+
+</body>
+
+</html>

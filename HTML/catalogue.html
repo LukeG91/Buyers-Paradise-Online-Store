@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linking Bootstrap 4 to the webpage -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/catalogueAndCart.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap"
+        rel="stylesheet">
+    <title>catalogue Page</title>
+</head>
+
+<!-- This is the catalogue oage of the website which displays the items that we have for sale -->
+
+<body id="catalogueBody" onload="displayCurrentTotal()">
+
+    <!-- Main heading for the catalogue page -->
+
+    <header class="headerSection">
+        <div>
+            <nav>
+                <div class="headerSectionMainHeadingBox">
+                    <h1>Welcome to our shop</h1>
+                </div>
+                <!-- Creating the shopping cart and Home page links -->
+                <ul>
+                    <li><a href="./index.html"><em>Home</em></a></li>
+                    <li class="cart"><a href="./cart.html">
+                            <ion-icon name="basket"></ion-icon>Cart<span class="amountOfItems">0</span>
+                        </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main container section where bootstrap grid has been used.  
+        This is implemented by using the container and row classes. 
+        The 'col-sm-4' class is used to create the colums I need for
+        the Bootstrap grid. -->
+
+    <div class="saleHeading">
+        <h1><em>50% off the listed price on ALL items!!</em></h1>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            <!-- Grid containing 12 products for sale -->
+
+            <div class="col-sm-4 shadow p-3 mb-5 bg-white rounded">
+                <h4>Nike Designer Hats</h4>
+
+                <!-- Making images responsive using the "img-responsive" class, this applies the following: 
+                    max-width: 100% and height: auto. -->
+
+                <!-- When images are set to be responsive, they will resize automatically to fit to 
+                    the size of the screen of the device that is being used to browse to the website. -->
+
+                <!-- I have used the (img-thumbnail) Bootstrap class for my images, this is used to add a rounded 1px border. -->
+
+                <!-- Clicking on an image takes you to a table with additional product information about that product.  
+                     I used a Bootstrap table on the product-information.html page, and I used an a tag with a reference to the product-information.html page
+                     and I linked the relevant table row using an ID for each table row.  -->
+
+                <a href="./product-information.html#product1"><img class="img-thumbnail img-responsive"
+                        src="../images/Caps/Nike-cap.jpg" alt="Nike cap"></a>
+                <p><em>Limited edition Nike designer peak cap </em> <span>ID: #1</span> <br>
+                    R399
+                </p>
+                <a class="addToCart firstCartProduct" href="#">Add Item To Cart</a>
+            </div>
+
+            <!-- Adding shadows to the boxes by using the following Bootstrap classes: 
+                 shadow p-3 mb-5 bg-white rounded-->
+
+            <div class="col-sm-4 shadow p-3 mb-5 bg-white rounded">
+                <h4>Ladies Designer Hats</h4>
+                <a href="./product-information.html#product2"><img class="img-thumbnail img-responsive"
+                        src="../images/Caps/ladies-designer-hat.jpg" alt="ladies designer hat"></a>
+                <p><em>Ladies custom designer summer hat </em> <span>ID: #2</span> <br>
+                    R299
+                </p>
+                <a class="addToCart secondCartProduct" href="#">Add Item To Cart</a>
+
+            </div>
+            <div class="col-sm-4 shadow p-3 mb-5 bg-white rounded">
+                <h4>Ladies Designer Peak Caps</h4>
+                <a href="./product-information.html#product3"><img class="img-thumbnail img-responsive"
+                        src="../images/Caps/ladies-designer-hat-2.jpg" alt="ladies-designer-hat-2"></a>
+                <p><em>Ladies custom designer peak cap </em> <span>ID: #3</span> <br>
+                    R399
+                </p>
+                <a class="addToCart thirdCartProduct" href="#">Add Item To Cart</a>
+
+            </div>
+            <div class="col-sm-4 shadow p-3 mb-5 bg-white rounded">
+                <h4>Brazil Football Jersey</h4>
+                <a href="./product-information.html#product4"><img class="img-thumbnail img-responsive"
+                        src="../images/T-shirts/Football-jersey.jpg" alt="Football jersey"></a>
+                <p><em>Brazil Football Jersey </em> <span>ID: #4</span> <br>
+                    R999
+                </p>
+                <a class="addToCart fourthCartProduct" href="#">Add Item To Cart</a>
+            </div>
+            <div class="col-sm-4 shadow p-3 mb-5 bg-white rounded">
+                <h4>Plain T-Shirts</h4>
+                <a href="./product-information.html#product5"><img id="plain__tshirts"
+                        class="img-thumbnail img-responsive" src="../images/T-shirts/Plain-Ts.jpg"
+                        alt="plain t-shirts"></a>
+                <p><em>Ladies and Mens plain T's </em> <span>ID: #5</span> <br>
+                    R299
+                </p>
+                <a class="addToCart fifthCartProduct" href="#">Add Item To Cart</a>
+            </div>
+            <div class="col-sm-4 shadow p-3 mb-5 bg-white rounded">
+                <h4>Ladies Designer Jersey</h4>
+                <a href="./product-information.html#product6"><img class="img-thumbnail img-responsive"
+                        src="../images/T-shirts/ladies-designer-jerseys.jpg" alt="Ladies designer jersey"></a>
+                <p><em>Ladies designer Jerseys </em> <span>ID: #6</span> <br>
+                    R799
+                </p>
+                <a class="addToCart sixthCartProduct" href="#">Add Item To Cart</a>
+            </div>
+            <div class="col-sm-4 shadow p-3 mb-5 bg-white rounded">
+                <h4>Blue Suede Shoes</h4>
+                <a href="./product-information.html#product7"><img id="blue_suade" class="img-thumbnail img-responsive"
+                        src="../images/Shoes/Blue-swade.jpg" alt="Blue suade shoes"></a>
+                <p><em>Custom designer shoes for Men </em> <span>ID: #7</span> <br>
+                    R1299
+                </p>
+                <a class="addToCart seventhCartProduct" href="#">Add Item To Cart</a>
+            </div>
+            <div class="col-sm-4 shadow p-3 mb-5 bg-white rounded">
+                <h4>Designer Nikes</h4>
+                <a href="./product-information.html#product8"><img class="img-thumbnail img-responsive"
+                        src="../images/Shoes/Designer-Nikes.jpg" alt="Designer-Nike-shoes"></a>
+                <p><em>Mens Limited edition Nike trainers </em> <span>ID: #8</span> <br>
+                    R2999
+                </p>
+                <a class="addToCart eighthCartProduct" href="#">Add Item To Cart</a>
+            </div>
+            <div class="col-sm-4 shadow p-3 mb-5 bg-white rounded">
+                <h4>Designer Nike Shoes</h4>
+                <a href="./product-information.html#product9"><img class="img-thumbnail img-responsive"
+                        src="../images/Shoes/Designer-shoes.jpg" alt="Designer-shoes"></a>
+                <p><em>Mens & Ladies designer Nike shoes </em> <span>ID: #9</span> <br>
+                    R1599
+                </p>
+                <a class="addToCart ninethCartProduct" href="#">Add Item To Cart</a>
+            </div>
+            <div class="col-sm-4 shadow p-3 mb-5 bg-white rounded">
+                <h4>Nike Airforce Shoes</h4>
+                <a href="./product-information.html#product10"><img class="img-thumbnail img-responsive"
+                        src="../images/Shoes/Nike-airforce.jpg" alt="Nike-Airforce-shoes"></a>
+                <p><em>Ladies & Mens Nike Airforce</em> <span>ID: #10</span> <br>
+                    R2999
+                </p>
+                <a class="addToCart tenthCartProduct" href="#">Add Item To Cart</a>
+            </div>
+            <div class="col-sm-4 shadow p-3 mb-5 bg-white rounded">
+                <h4>Nike Training Shoes</h4>
+                <a href="./product-information.html#product11"><img id="Nike__trainers"
+                        class="img-thumbnail img-responsive" src="../images/Shoes/Nike-trainers.jpg"
+                        alt="Nike-training-shoes"></a>
+                <p><em>Mens Nike trainers </em> <span>ID: #11</span> <br>
+                    R1999
+                </p>
+                <a class="addToCart eleventhCartProduct" href="#">Add Item To Cart</a>
+            </div>
+            <div class="col-sm-4 shadow p-3 mb-5 bg-white rounded">
+                <h4>Salomon Trail Running Shoes</h4>
+                <a href="./product-information.html#product12"><img class="img-thumbnail img-responsive"
+                        src="../images/Shoes/Salomons.jpg" alt="Soloman-shoes"></a>
+                <p><em>Mens Salomon trail running shoes </em> <span>ID: #12</span> <br>
+                    R3999
+                </p>
+                <a class="addToCart twelthCartProduct" href="#">Add Item To Cart</a>
+            </div>
+        </div>
+
+        <!-- Adding a table using Bootstrap. I used the 'card' class to round the edges/border of the table. -->
+        <!-- I used the 'table-hover' class to enable a hover state for the rows within the <tbody> tag in the table.  -->
+
+        <div class="tableContainer">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First Name</th>
+                        <th scope="col">Last Name</th>
+                        <th scope="col">Favourite Item</th>
+                        <th scope="col">Product ID</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Luke</td>
+                        <td>Glendining</td>
+                        <td>Mens Limited edition Nike trainers</td>
+                        <td>#8</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Nick</td>
+                        <td>Glendining</td>
+                        <td>Mens Salomon trail running shoes</td>
+                        <td>#12</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Jesse</td>
+                        <td>Rinquest</td>
+                        <td>Custom designer shoes for Men</td>
+                        <td>#7</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Broghan</td>
+                        <td>Ross</td>
+                        <td>Ladies custom designer summer hat</td>
+                        <td>#2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Adding spaces below for a better visual layout -->
+
+        <br>
+        <br>
+
+        <!-- I added a form using Bootstrap and used the 'rounded' class to round the edges/border of the form -->
+        <!-- I also made the form horizontal by adding the 'row' class to the form groups and I used the 'col-sm-2'
+        class to set the width of my lables.-->
+        <!-- The 'col-form-label' class has been added to the labels to ensure that they are centered vertically with 
+            their form controls.  -->
+
+        <form class="rounded">
+
+            <div class="formHeading">
+                <h1><em>Contact us:</em></h1>
+            </div>
+
+            <div class="form-group row">
+                <label for="firstName" class="col-sm-2 col-form-label">First Name:</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="lastName" class="col-sm-2 col-form-label">Last Name:</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="email" class="col-sm-2 col-form-label">Email:</label>
+                <div class="col-sm-8">
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="customerMessage" class="col-sm-2 col-form-label">Your Message:</label>
+                <div class="col-sm-4">
+                    <textarea class="form-control" id="customerMessage" rows="5"
+                        placeholder="Let us know what you think of our products..."></textarea>
+                </div>
+            </div>
+            <div class="submitButtonContainer">
+                <button type="submit" class="btn btn-primary submit-button">Submit</button>
+            </div>
+        </form>
+
+    </div>
+
+    <!-- Linking my JavaScript file to this HTML page as well as the to the ionicons.js file. -->
+
+    <script src="../JavaScript/script.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+
+</html>
