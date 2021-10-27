@@ -54,7 +54,7 @@ https://code.visualstudio.com/docs/editor/extension-gallery
 
 <a name="usage"></a>
 
-# Project Usage
+# Usage
 
 `The screenshots below displays the different pages on the website and how to interact with the web page.`
 
